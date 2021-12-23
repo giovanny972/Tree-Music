@@ -1,0 +1,42 @@
+@import "~bootstrap/scss/bootstrap";
+
+
+//Home page
+.globe {
+    display: flex;
+    justify-content: center;
+}
+
+.globe-img {
+    height: 30rem;
+    width: 30rem;
+    margin-top: 1rem;
+}
+
+.titre {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-light {
+    background-color: #5B8C5A;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2rem;
+}
+
+.logo-nav {
+    height: 10rem;
+    width: 10rem;
+}
+
+// Category page
+
+.containe-card {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
