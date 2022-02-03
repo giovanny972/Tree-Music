@@ -1,0 +1,24 @@
+.content-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    gap: 2rem;
+}
+
+.image-plant {
+    width: 200px;
+    height: 220px;
+}
+
+.card {
+    width: 18rem;
+    margin-bottom: 2rem;
+}
+
+.button {
+    text-decoration: none;
+    border: 1px black;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}

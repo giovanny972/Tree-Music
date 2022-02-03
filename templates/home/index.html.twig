@@ -1,8 +1,20 @@
 {% extends 'base.html.twig' %}
 {% block title %} Tree Music {% endblock %}
 {% block body %}
-    <h1 class="titre"> Choix de la Parcelle </h1>
+<h1 class="titre"> Choix de la Parcelle </h1>
+<div class="content">
     <div class="globe">
         <img class="globe-img" src="{{ asset('build/images/globe.gif') }}" alt="globe">
     </div>
+    <div>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Choix d'un continents</option>
+            <option value="1">Amerique du sud</option>
+            <option value="2">Amerique du nord</option>
+            <option value="3">Asie</option>
+            <option value="4">Europe</option>
+            <option value="5">Afrique</option>
+        </select>
+    </div>
+</div>
 {% endblock %}

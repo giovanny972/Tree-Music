@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Parcel index{% endblock %}
+
+{% block body %}
+    <h1>Parcel index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Gps_location</th>
+                <th>Region</th>
+                <th>Country</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for parcel in parcels %}
+            <tr>
+                <td>{{ parcel.id }}</td>
+                <td>{{ parcel.gpsLocation }}</td>
+                <td>{{ parcel.region }}</td>
+                <td>{{ parcel.country }}</td>
+                <td>
+                    <a href="{{ path('parcel_show', {'id': parcel.id}) }}">show</a>
+                    <a href="{{ path('parcel_edit', {'id': parcel.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('parcel_new') }}">Create new</a>
+{% endblock %}

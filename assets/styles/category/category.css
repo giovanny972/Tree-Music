@@ -1,0 +1,9 @@
+
+.content-category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-left: 10rem;
+}
+
